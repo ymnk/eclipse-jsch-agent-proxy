@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: jsch-agent-proxy Connector for Pageant
+Bundle-SymbolicName: com.jcraft.jsch.agentproxy.eclipse.pageant;singleton:=true
+Bundle-Version: 0.0.4
+Bundle-Activator: com.jcraft.jsch.agentproxy.eclipse.pageant.Activator
+Bundle-Vendor: JCraft, Inc.
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.jsch.core;bundle-version="1.1.400",
+ com.jcraft.jsch;bundle-version="0.1.49"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .,
+ lib/jsch-agent-proxy-pageant-0.0.4.jar,
+ lib/jsch-agent-proxy-core-0.0.4.jar,
+ lib/jsch-agent-proxy-jsch-0.0.4.jar,
+ lib/jna-3.4.0.jar,
+ lib/platform-3.4.0.jar
