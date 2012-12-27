@@ -16,16 +16,22 @@ public class IdentityRepositoryFactory implements IIdentityRepositoryFactory{
 	@Override
 	public IdentityRepository create() {
 		Connector con = null;
-		try {
-	        USocketFactory usf = new JNAUSocketFactory();
-	        con = new SSHAgentConnector(usf);
-		} catch (AgentProxyException e) {
-		} catch (java.lang.UnsatisfiedLinkError e) {
-			// JNA may throw an exception if CLibrary is not available.
-		} catch (java.lang.NoClassDefFoundError e) {
-			// JNA may throw an exception if CLibrary is not available.
-		}
 		
+		if (SSHAgentConnector.isConnectorAvailable() &&
+			!System.getProperty("os.name").startsWith("Windows")) {
+			try {
+				USocketFactory usf = new JNAUSocketFactory();
+				con = new SSHAgentConnector(usf);
+			}
+			catch (AgentProxyException e) {
+			}
+			catch (java.lang.UnsatisfiedLinkError e) {
+				// JNA may throw an exception if CLibrary is not available.
+			}
+			catch (java.lang.NoClassDefFoundError e) {
+				// JNA may throw an exception if CLibrary is not available.
+			}
+		}
 		
 		if (con == null) {
 			con = new Connector() {
