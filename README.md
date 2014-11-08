@@ -30,7 +30,6 @@ Provided plug-ins depend on [jsch-agent-proxy](http://www.jcraft.com/jsch-agent-
 ## License
 This software is licensed under revised BSD license, but depends on other software.
 
-* com.jcraft.jsch.agentproxy.eclipse.pageant is using [JNA](https://github.com/twall/jna) licensed under [LGPL](https://github.com/twall/jna/blob/master/LICENSE).
-* com.jcraft.jsch.agentproxy.eclipse.sshagent is using [JNA](https://github.com/twall/jna) licensed under [LGPL](https://github.com/twall/jna/blob/master/LICENSE).
-* com.jcraft.jsch.agentproxy.eclipse.sshagent.junixsocket is using [junixsocket](http://code.google.com/p/junixsocket/) licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+* com.jcraft.jsch.agentproxy.eclipse.pageant is using [JNA](https://github.com/twall/jna) licensed under [Apache Software License](https://github.com/twall/jna/blob/master/LICENSE).
+* com.jcraft.jsch.agentproxy.eclipse.sshagent is using [JNA](https://github.com/twall/jna) licensed under [Apache Software License](https://github.com/twall/jna/blob/master/LICENSE).
 
