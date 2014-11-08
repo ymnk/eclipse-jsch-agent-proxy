@@ -7,12 +7,13 @@ Bundle-Activator: com.jcraft.jsch.agentproxy.eclipse.sshagent.Activator
 Bundle-Vendor: JCraft, Inc.
 Require-Bundle: org.eclipse.core.runtime,
  com.jcraft.jsch;bundle-version="0.1.49",
- org.eclipse.jsch.core;bundle-version="1.1.400",
- net.java.dev.jna;bundle-version="3.4.0"
+ org.eclipse.jsch.core;bundle-version="1.1.400"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: .,
- lib/jsch-agent-proxy-sshagent-0.0.4.jar,
- lib/jsch-agent-proxy-usocket-jna-0.0.4.jar,
- lib/jsch-agent-proxy-core-0.0.4.jar,
- lib/jsch-agent-proxy-jsch-0.0.4.jar
+ lib/jna-4.1.0.jar,
+ lib/jna-platform-4.1.0.jar,
+ lib/jsch.agentproxy.core-0.0.8.jar,
+ lib/jsch.agentproxy.jsch-0.0.8.jar,
+ lib/jsch.agentproxy.sshagent-0.0.8.jar,
+ lib/jsch.agentproxy.usocket-jna-0.0.8.jar
