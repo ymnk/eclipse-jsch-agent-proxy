@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: jsch-agent-proxy Connector for ssh-agent
 Bundle-SymbolicName: com.jcraft.jsch.agentproxy.eclipse.sshagent;singleton:=true
-Bundle-Version: 0.0.4
+Bundle-Version: 0.0.8
 Bundle-Activator: com.jcraft.jsch.agentproxy.eclipse.sshagent.Activator
 Bundle-Vendor: JCraft, Inc.
 Require-Bundle: org.eclipse.core.runtime,
