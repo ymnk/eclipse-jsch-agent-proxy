@@ -28,8 +28,8 @@ Provided plug-ins depend on [jsch-agent-proxy](http://www.jcraft.com/jsch-agent-
 6.   Try CVS or EGit plug-in.
 
 ## License
-This software is licensed under revised BSD license, but depends on other software.
+This software is licensed under revised BSD license, and depends on other software.
 
-* com.jcraft.jsch.agentproxy.eclipse.pageant is using [JNA](https://github.com/twall/jna) licensed under [Apache Software License](https://github.com/twall/jna/blob/master/LICENSE).
-* com.jcraft.jsch.agentproxy.eclipse.sshagent is using [JNA](https://github.com/twall/jna) licensed under [Apache Software License](https://github.com/twall/jna/blob/master/LICENSE).
+* com.jcraft.jsch.agentproxy.eclipse.pageant is using [JNA](https://github.com/twall/jna), which is licensed under [Apache License, Version 2.0](https://github.com/twall/jna/blob/master/LICENSE).
+* com.jcraft.jsch.agentproxy.eclipse.sshagent is using [JNA](https://github.com/twall/jna), which is licensed under [Apache License, Version 2.0](https://github.com/twall/jna/blob/master/LICENSE).
 
