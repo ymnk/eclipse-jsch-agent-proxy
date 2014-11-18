@@ -1,6 +1,6 @@
 package com.jcraft.jsch.agentproxy.eclipse.pageant;
 
-import org.eclipse.jsch.core.IIdentityRepositoryFactory;
+import org.eclipse.jsch.core.AbstractIdentityRepositoryFactory;
 
 import com.jcraft.jsch.IdentityRepository;
 import com.jcraft.jsch.agentproxy.AgentProxyException;
@@ -9,7 +9,7 @@ import com.jcraft.jsch.agentproxy.Connector;
 import com.jcraft.jsch.agentproxy.RemoteIdentityRepository;
 import com.jcraft.jsch.agentproxy.connector.PageantConnector;
 
-public class IdentityRepositoryFactory implements IIdentityRepositoryFactory{
+public class IdentityRepositoryFactory extends AbstractIdentityRepositoryFactory{
 
 	@Override
 	public IdentityRepository create() {
